@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+</head>
+<body>
+    <h1>Quản lý danh sách sinh viên</h1>
+
+    <h2>Danh sách sinh viên</h2>
+    <div id="studentList"></div>
+
+    <hr>
+
+    <h2>Thêm sinh viên</h2>
+    <input type="text" id="name" placeholder="Tên sinh viên">
+    <input type="text" id="className" placeholder="Lớp">
+    <input type="number" id="score" placeholder="Điểm" min="0" max="10">
+    <button onclick="addStudent()">Thêm sinh viên</button>
+
+    <hr>
+
+    <h2>1. Điểm trung bình</h2>
+    <button onclick="showAverage()">Tính điểm trung bình</button>
+    <p id="result1"></p>
+
+    <h2>2. Lấy tên, sắp xếp tiếng Việt</h2>
+    <button onclick="showNames()">Hiển thị tên</button>
+    <pre id="result2"></pre>
+
+    <h2>3. Xếp loại sinh viên</h2>
+    <button onclick="showClassification()">Xếp loại</button>
+    <pre id="result3"></pre>
+
+    <h2>4. Nhóm sinh viên theo lớp</h2>
+    <button onclick="showGroups()">Nhóm theo lớp</button>
+    <pre id="result4"></pre>
+
+    <h2>5. Top sinh viên điểm cao nhất</h2>
+    <input type="number" id="topN" value="3" min="0">
+    <button onclick="showTop()">Hiển thị Top</button>
+    <pre id="result5"></pre>
+
+    <script type="module" src="/Tuan8_Buoi9_Xong1NuaAsm/Bai2.js"></script>
+</body>
+</html>
